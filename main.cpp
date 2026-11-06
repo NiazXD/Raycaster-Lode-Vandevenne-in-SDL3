@@ -182,7 +182,6 @@ int main()
         SDL_Quit();
         return 1;
     }
-// Load all eight textures.
     
     std::vector<uint32_t> buffer(
         SCREEN_WIDTH * SCREEN_HEIGHT, 0
@@ -196,7 +195,6 @@ int main()
     double dirX = -1.0;
     double dirY = 0.0;
 
-    // Camera plane.
     double planeX = 0.0;
     double planeY = 0.66;
 
@@ -441,7 +439,7 @@ int main()
             }
         }
 
-        // Upload the complete screen buffer.
+    
         if (!SDL_UpdateTexture(
             screenTexture,
             nullptr,
